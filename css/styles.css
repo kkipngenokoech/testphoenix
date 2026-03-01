@@ -45,6 +45,20 @@ body {
     display: flex;
     list-style: none;
     gap: 2rem;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.nav-list .nav-item:nth-child(n+4) {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease;
+}
+
+.header:hover .nav-list .nav-item:nth-child(n+4) {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
 }
 
 .nav-link {
