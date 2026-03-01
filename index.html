@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CMU-Africa | Carnegie Mellon University</title>
+    <meta name="description" content="Carnegie Mellon University Africa - Engineering excellence in the heart of Africa">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <img src="https://via.placeholder.com/200x60/c41e3a/ffffff?text=CMU+Africa" alt="CMU Africa Logo">
+                </div>
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li><a href="#home" class="nav-link active">Home</a></li>
+                        <li class="nav-dropdown">
+                            <a href="#about" class="nav-link">About <i class="fas fa-chevron-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#overview">Overview</a></li>
+                                <li><a href="#mission">Mission & Vision</a></li>
+                                <li><a href="#leadership">Leadership</a></li>
+                                <li><a href="#campus">Campus Life</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-dropdown">
+                            <a href="#academics" class="nav-link">Academics <i class="fas fa-chevron-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#programs">Degree Programs</a></li>
+                                <li><a href="#curriculum">Curriculum</a></li>
+                                <li><a href="#faculty">Faculty</a></li>
+                                <li><a href="#research">Research</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-dropdown">
+                            <a href="#admissions" class="nav-link">Admissions <i class="fas fa-chevron-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#apply">How to Apply</a></li>
+                                <li><a href="#requirements">Requirements</a></li>
+                                <li><a href="#scholarships">Scholarships</a></li>
+                                <li><a href="#deadlines">Deadlines</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#student-life" class="nav-link">Student Life</a></li>
+                        <li><a href="#news" class="nav-link">News & Events</a></li>
+                        <li><a href="#contact" class="nav-link">Contact</a></li>
+                    </ul>
+                    <div class="mobile-menu-toggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero" id="home">
+            <div class="hero-slider">
+                <div class="hero-slide active">
+                    <div class="hero-background">
+                        <div class="hero-overlay"></div>
+                        <div class="container">
+                            <div class="hero-content">
+                                <h1 class="hero-title">Engineering Excellence in Africa</h1>
+                                <p class="hero-subtitle">Carnegie Mellon University Africa delivers world-class engineering education and cutting-edge research in the heart of Rwanda, fostering innovation for Africa's technological future.</p>
+                                <div class="hero-buttons">
+                                    <a href="#programs" class="btn btn-primary">Explore Programs</a>
+                                    <a href="#admissions" class="btn btn-secondary">Apply Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-slide">
+                    <div class="hero-background hero-bg-2">
+                        <div class="hero-overlay"></div>
+                        <div class="container">
+                            <div class="hero-content">
+                                <h1 class="hero-title">Research That Transforms</h1>
+                                <p class="hero-subtitle">Join our community of researchers tackling Africa's most pressing challenges through innovative engineering solutions and interdisciplinary collaboration.</p>
+                                <div class="hero-buttons">
+                                    <a href="#research" class="btn btn-primary">Discover Research</a>
+                                    <a href="#faculty" class="btn btn-secondary">Meet Faculty</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-slide">
+                    <div class="hero-background hero-bg-3">
+                        <div class="hero-overlay"></div>
+                        <div class="container">
+                            <div class="hero-content">
+                                <h1 class="hero-title">Global Impact, Local Focus</h1>
+                                <p class="hero-subtitle">Experience the Carnegie Mellon tradition of excellence while addressing the unique opportunities and challenges of the African continent.</p>
+                                <div class="hero-buttons">
+                                    <a href="#about" class="btn btn-primary">Learn More</a>
+                                    <a href="#student-life" class="btn btn-secondary">Campus Life</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-controls">
+                <button class="hero-prev"><i class="fas fa-chevron-left"></i></button>
+                <div class="hero-dots">
+                    <button class="hero-dot active" data-slide="0"></button>
+                    <button class="hero-dot" data-slide="1"></button>
+                    <button class="hero-dot" data-slide="2"></button>
+                </div>
+                <button class="hero-next"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </section>
+
+        <section class="stats-section">
+            <div class="container">
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="500">0</div>
+                        <div class="stat-label">Students</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="50">0</div>
+                        <div class="stat-label">Faculty Members</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="25">0</div>
+                        <div class="stat-label">Countries Represented</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="95">0</div>
+                        <div class="stat-label">% Employment Rate</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about-preview" id="about">
+            <div class="container">
+                <div class="about-content">
+                    <div class="about-text">
+                        <div class="section-header">
+                            <h2>About CMU-Africa</h2>
+                            <p>Pioneering engineering education in Africa since 2011</p>
+                        </div>
+                        <p>Carnegie Mellon University Africa represents a bold vision: bringing world-class engineering education to the heart of Africa. Located in Kigali, Rwanda, we offer the same rigorous academic standards as our Pittsburgh campus, while addressing the unique challenges and opportunities of the African continent.</p>
+                        <p>Our programs combine theoretical excellence with practical application, preparing graduates to become leaders in technology, innovation, and entrepreneurship across Africa and beyond.</p>
+                        <div class="about-highlights">
+                            <div class="highlight-item">
+                                <i class="fas fa-award"></i>
+                                <span>Same degree as CMU Pittsburgh</span>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="fas fa-globe-africa"></i>
+                                <span>Africa-focused curriculum</span>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="fas fa-handshake"></i>
+                                <span>Industry partnerships</span>
+                            </div>
+                        </div>
+                        <a href="#" class="btn btn-primary">Learn More About Us</a>
+                    </div>
+                    <div class="about-image">
+                        <img src="https://via.placeholder.com/600x400/2c5aa0/ffffff?text=CMU+Africa+Campus" alt="CMU Africa Campus">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="programs-section" id="programs">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Academic Programs</h2>
+                    <p>Master's degree programs designed for the future of engineering</p>
+                </div>
+                <div class="programs-grid">
+                    <div class="program-card featured">
+                        <div class="program-badge">Most Popular</div>
+                        <div class="program-icon">
+                            <i class="fas fa-microchip"></i>
+                        </div>
+                        <h3>Master of Science in Electrical & Computer Engineering</h3>
+                        <p>Focus on power systems, telecommunications, embedded systems, and signal processing with applications to African infrastructure challenges.</p>
+                        <ul class="program-features">
+                            <li>Power Systems & Smart Grids</li>
+                            <li>Telecommunications Networks</li>
+                            <li>Embedded Systems Design</li>
+                            <li>Digital Signal Processing</li>
+                        </ul>
+                        <div class="program-footer">
+                            <span class="program-duration">2 Years</span>
+                            <a href="#" class="program-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="program-card">
+                        <div class="program-icon">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <h3>Master of Science in Information Technology</h3>
+                        <p>Blend technical expertise with business acumen to lead IT initiatives and digital transformation across Africa.</p>
+                        <ul class="program-features">
+                            <li>Software Engineering</li>
+                            <li>Data Analytics</li>
+                            <li>IT Strategy & Management</li>
+                            <li>Cybersecurity</li>
+                        </ul>
+                        <div class="program-footer">
+                            <span class="program-duration">2 Years</span>
+                            <a href="#" class="program-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="program-card">
+                        <div class="program-badge">New Program</div>
+                        <div class="program-icon">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <h3>Master of Science in Engineering Artificial Intelligence</h3>
+                        <p>Cutting-edge program preparing students for the AI revolution in engineering applications and smart systems.</p>
+                        <ul class="program-features">
+                            <li>Machine Learning Systems</li>
+                            <li>Computer Vision</li>
+                            <li>Natural Language Processing</li>
+                            <li>AI Ethics & Policy</li>
+                        </ul>
+                        <div class="program-footer">
+                            <span class="program-duration">2 Years</span>
+                            <a href="#" class="program-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="research-section" id="research">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Research Excellence</h2>
+                    <p>Addressing Africa's challenges through innovative research</p>
+                </div>
+                <div class="research-areas">
+                    <div class="research-area">
+                        <div class="research-icon">
+                            <i class="fas fa-solar-panel"></i>
+                        </div>
+                        <h3>Sustainable Energy</h3>
+                        <p>Developing renewable energy solutions for rural electrification and smart grid technologies.</p>
+                    </div>
+                    <div class="research-area">
+                        <div class="research-icon">
+                            <i class="fas fa-wifi"></i>
+                        </div>
+                        <h3>ICT for Development</h3>
+                        <p>Leveraging technology to improve healthcare, education, and financial inclusion across Africa.</p>
+                    </div>
+                    <div class="research-area">
+                        <div class="research-icon">
+                            <i class="fas fa-seedling"></i>
+                        </div>
+                        <h3>Smart Agriculture</h3>
+                        <p>Applying IoT, AI, and data analytics to enhance agricultural productivity and food security.</p>
+                    </div>
+                    <div class="research-area">
+                        <div class="research-icon">
+                            <i class="fas fa-city"></i>
+                        </div>
+                        <h3>Smart Cities</h3>
+                        <p>Designing intelligent urban infrastructure for Africa's rapidly growing cities.</p>
+                    </div>
+                </div>
+                <div class="research-cta">
+                    <a href="#" class="btn btn-primary">Explore Research Projects</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="news-events" id="news">
+            <div class="container">
+                <div class="section-header">
+                    <h2>News & Events</h2>
+                    <p>Stay connected with the latest from CMU-Africa</p>
+                </div>
+                <div class="news-tabs">
+                    <button class="news-tab active" data-tab="news">Latest News</button>
+                    <button class="news-tab" data-tab="events">Upcoming Events</button>
+                    <button class="news-tab" data-tab="achievements">Achievements</button>
+                </div>
+                <div class="news-content">
+                    <div class="news-tab-content active" id="news-content">
+                        <div class="news-grid">
+                            <article class="news-card featured">
+                                <div class="news-image">
+                                    <img src="https://via.placeholder.com/400x250/c41e3a/ffffff?text=Research+Award" alt="Research Award">
+                                </div>
+                                <div class="news-content-text">
+                                    <div class="news-meta">
+                                        <span class="news-date">December 15, 2023</span>
+                                        <span class="news-category">Research</span>
+                                    </div>
+                                    <h3>CMU-Africa Faculty Wins International Research Award</h3>
+                                    <p>Dr. Sarah Johnson receives prestigious IEEE award for groundbreaking work in sustainable energy systems for rural Africa.</p>
+                                    <a href="#" class="news-link">Read Full Story</a>
+                                </div>
+                            </article>
+                            <article class="news-card">
+                                <div class="news-meta">
+                                    <span class="news-date">December 10, 2023</span>
+                                    <span class="news-category">Students</span>
+                                </div>
+                                <h3>Student Team Wins Continental Robotics Competition</h3>
+                                <p>CMU-Africa students develop innovative agricultural robot that wins first place at the African Robotics Championship.</p>
+                                <a href="#" class="news-link">Read More</a>
+                            </article>
+                            <article class="news-card">
+                                <div class="news-meta">
+                                    <span class="news-date">November 28, 2023</span>
+                                    <span class="news-category">Campus</span>
+                                </div>
+                                <h3>New AI Research Lab Opens</h3>
+                                <p>State-of-the-art artificial intelligence research facility opens to support cutting-edge research in machine learning and robotics.</p>
+                                <a href="#" class="news-link">Read More</a>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="news-tab-content" id="events-content">
+                        <div class="events-list">
+                            <div class="event-item">
+                                <div class="event-date">
+                                    <span class="event-day">25</span>
+                                    <span class="event-month">Jan</span>
+                                </div>
+                                <div class="event-details">
+                                    <h4>Information Session: Master's Programs</h4>
+                                    <p>Learn about our graduate programs and admission requirements</p>
+                                    <span class="event-time">2:00 PM - 4:00 PM</span>
+                                </div>
+                            </div>
+                            <div class="event-item">
+                                <div class="event-date">
+                                    <span class="event-day">15</span>
+                                    <span class="event-month">Feb</span>
+                                </div>
+                                <div class="event-details">
+                                    <h4>Tech Innovation Summit</h4>
+                                    <p>Annual conference showcasing student and faculty research</p>
+                                    <span class="event-time">9:00 AM - 5:00 PM</span>
+                                </div>
+                            </div>
+                            <div class="event-item">
+                                <div class="event-date">
+                                    <span class="event-day">01</span>
+                                    <span class="event-month">Mar</span>
+                                </div>
+                                <div class="event-details">
+                                    <h4>Application Deadline</h4>
+                                    <p>Final deadline for Fall 2024 admission applications</p>
+                                    <span class="event-time">11:59 PM</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news-tab-content" id="achievements-content">
+                        <div class="achievements-grid">
+                            <div class="achievement-item">
+                                <div class="achievement-icon">
+                                    <i class="fas fa-trophy"></i>
+                                </div>
+                                <h4>Top 10 Engineering School in Africa</h4>
+                                <p>Ranked among the top engineering institutions on the continent by African University Rankings 2023</p>
+                            </div>
+                            <div class="achievement-item">
+                                <div class="achievement-icon">
+                                    <i class="fas fa-medal"></i>
+                                </div>
+                                <h4>95% Graduate Employment Rate</h4>
+                                <p>Our graduates are highly sought after by leading technology companies and research institutions</p>
+                            </div>
+                            <div class="achievement-item">
+                                <div class="achievement-icon">
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <h4>50+ Research Publications</h4>
+                                <p>Faculty and students published over 50 peer-reviewed papers in top-tier journals this year</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonials-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Student Voices</h2>
+                    <p>Hear from our community of scholars and innovators</p>
+                </div>
+                <div class="testimonials-slider">
+                    <div class="testimonial active">
+                        <div class="testimonial-content">
+                            <div class="testimonial-text">
+                                <p>"CMU-Africa provided me with world-class education while allowing me to focus on solving real problems in my home country. The faculty's expertise and the practical approach to learning prepared me for a successful career in tech."</p>
+                            </div>
+                            <div class="testimonial-author">
+                                <div class="author-image">
+                                    <img src="https://via.placeholder.com/80x80/2c5aa0/ffffff?text=AM" alt="Amina Mwangi">
+                                </div>
+                                <div class="author-info">
+                                    <h4>Amina Mwangi</h4>
+                                    <span>MS ECE '22, Software Engineer at Google</span>
+                                    <span class="author-country">Kenya</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial">
+                        <div class="testimonial-content">
+                            <div class="testimonial-text">
+                                <p>"The research opportunities at CMU-Africa are incredible. I worked on projects that directly impact rural communities in Rwanda, and the experience shaped my passion for using technology for social good."</p>
+                            </div>
+                            <div class="testimonial-author">
+                                <div class="author-image">
+                                    <img src="https://via.placeholder.com/80x80/2c5aa0/ffffff?text=JK" alt="Jean-Claude Kayitare">
+                                </div>
+                                <div class="author-info">
+                                    <h4>Jean-Claude Kayitare</h4>
+                                    <span>MS IT '23, Tech Entrepreneur</span>
+                                    <span class="author-country">Rwanda</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial">
+                        <div class="testimonial-content">
+                            <div class="testimonial-text">
+                                <p>"The diversity of the student body and the collaborative environment at CMU-Africa created an amazing learning experience. I made lifelong connections with peers from across the continent."</p>
+                            </div>
+                            <div class="testimonial-author">
+                                <div class="author-image">
+                                    <img src="https://via.placeholder.com/80x80/2c5aa0/ffffff?text=FO" alt="Fatima Okonkwo">
+                                </div>
+                                <div class="author-info">
+                                    <h4>Fatima Okonkwo</h4>
+                                    <span>MS EAI '24, AI Researcher</span>
+                                    <span class="author-country">Nigeria</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-controls">
+                    <button class="testimonial-prev"><i class="fas fa-chevron-left"></i></button>
+                    <div class="testimonial-dots">
+                        <button class="testimonial-dot active" data-testimonial="0"></button>
+                        <button class="testimonial-dot" data-testimonial="1"></button>
+                        <button class="testimonial-dot" data-testimonial="2"></button>
+                    </div>
+                    <button class="testimonial-next"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <div class="container">
+                <div class="cta-content">
+                    <h2>Ready to Shape Africa's Future?</h2>
+                    <p>Join our community of innovators, researchers, and leaders who are transforming the continent through technology and engineering excellence.</p>
+                    <div class="cta-buttons">
+                        <a href="#" class="btn btn-primary btn-large">Apply Now</a>
+                        <a href="#" class="btn btn-secondary btn-large">Request Information</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="https://via.placeholder.com/200x60/ffffff/c41e3a?text=CMU+Africa" alt="CMU Africa Logo">
+                    </div>
+                    <p>Carnegie Mellon University Africa is committed to delivering world-class engineering education and research excellence in the heart of Africa.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#programs">Academic Programs</a></li>
+                        <li><a href="#admissions">Admissions</a></li>
+                        <li><a href="#research">Research</a></li>
+                        <li><a href="#student-life">Student Life</a></li>
+                        <li><a href="#news">News & Events</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Programs</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">MS in Electrical & Computer Engineering</a></li>
+                        <li><a href="#">MS in Information Technology</a></li>
+                        <li><a href="#">MS in Engineering Artificial Intelligence</a></li>
+                        <li><a href="#">Research Opportunities</a></li>
+                        <li><a href="#">Faculty Directory</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Carnegie Mellon University Africa<br>TK 25 KN 3 Rd, Kigali, Rwanda</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+250 788 123 456</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>info@africa.cmu.edu</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p>&copy; 2023 Carnegie Mellon University Africa. All rights reserved.</p>
+                    <div class="footer-bottom-links">
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms of Use</a>
+                        <a href="#">Accessibility</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
