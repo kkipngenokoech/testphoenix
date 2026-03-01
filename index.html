@@ -7,59 +7,74 @@
     <meta name="description" content="Carnegie Mellon University Africa - Engineering excellence in the heart of Africa">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/responsive.css">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
 </head>
 <body>
-    <header class="header">
+    <header class="header" id="header">
         <div class="container">
             <div class="header-content">
                 <div class="logo">
-                    <img src="https://via.placeholder.com/200x60/c41e3a/ffffff?text=CMU+Africa" alt="CMU Africa Logo">
+                    <a href="#home" class="logo-link">
+                        <img src="https://via.placeholder.com/200x60/c41e3a/ffffff?text=CMU+Africa" alt="CMU Africa Logo">
+                    </a>
                 </div>
-                <nav class="nav">
+                <nav class="nav" role="navigation" aria-label="Main navigation">
                     <ul class="nav-list">
                         <li><a href="#home" class="nav-link active">Home</a></li>
                         <li class="nav-dropdown">
-                            <a href="#about" class="nav-link">About <i class="fas fa-chevron-down"></i></a>
-                            <ul class="dropdown-menu">
-                                <li><a href="#overview">Overview</a></li>
-                                <li><a href="#mission">Mission & Vision</a></li>
-                                <li><a href="#leadership">Leadership</a></li>
-                                <li><a href="#campus">Campus Life</a></li>
+                            <a href="#about" class="nav-link dropdown-trigger" aria-haspopup="true" aria-expanded="false">
+                                About 
+                                <i class="fas fa-chevron-down dropdown-icon"></i>
+                            </a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="#overview" role="menuitem">Overview</a></li>
+                                <li><a href="#mission" role="menuitem">Mission & Vision</a></li>
+                                <li><a href="#leadership" role="menuitem">Leadership</a></li>
+                                <li><a href="#campus" role="menuitem">Campus Life</a></li>
                             </ul>
                         </li>
                         <li class="nav-dropdown">
-                            <a href="#academics" class="nav-link">Academics <i class="fas fa-chevron-down"></i></a>
-                            <ul class="dropdown-menu">
-                                <li><a href="#programs">Degree Programs</a></li>
-                                <li><a href="#curriculum">Curriculum</a></li>
-                                <li><a href="#faculty">Faculty</a></li>
-                                <li><a href="#research">Research</a></li>
+                            <a href="#academics" class="nav-link dropdown-trigger" aria-haspopup="true" aria-expanded="false">
+                                Academics 
+                                <i class="fas fa-chevron-down dropdown-icon"></i>
+                            </a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="#programs" role="menuitem">Degree Programs</a></li>
+                                <li><a href="#curriculum" role="menuitem">Curriculum</a></li>
+                                <li><a href="#faculty" role="menuitem">Faculty</a></li>
+                                <li><a href="#research" role="menuitem">Research</a></li>
                             </ul>
                         </li>
                         <li class="nav-dropdown">
-                            <a href="#admissions" class="nav-link">Admissions <i class="fas fa-chevron-down"></i></a>
-                            <ul class="dropdown-menu">
-                                <li><a href="#apply">How to Apply</a></li>
-                                <li><a href="#requirements">Requirements</a></li>
-                                <li><a href="#scholarships">Scholarships</a></li>
-                                <li><a href="#deadlines">Deadlines</a></li>
+                            <a href="#admissions" class="nav-link dropdown-trigger" aria-haspopup="true" aria-expanded="false">
+                                Admissions 
+                                <i class="fas fa-chevron-down dropdown-icon"></i>
+                            </a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="#apply" role="menuitem">How to Apply</a></li>
+                                <li><a href="#requirements" role="menuitem">Requirements</a></li>
+                                <li><a href="#scholarships" role="menuitem">Scholarships</a></li>
+                                <li><a href="#deadlines" role="menuitem">Deadlines</a></li>
                             </ul>
                         </li>
                         <li><a href="#student-life" class="nav-link">Student Life</a></li>
                         <li><a href="#news" class="nav-link">News & Events</a></li>
                         <li><a href="#contact" class="nav-link">Contact</a></li>
                     </ul>
-                    <div class="mobile-menu-toggle">
-                        <span></span>
-                        <span></span>
-                        <span></span>
+                    <div class="nav-actions">
+                        <a href="#apply" class="nav-cta-btn">Apply Now</a>
+                        <button class="mobile-menu-toggle" aria-label="Toggle mobile menu" aria-expanded="false">
+                            <span class="hamburger-line"></span>
+                            <span class="hamburger-line"></span>
+                            <span class="hamburger-line"></span>
+                        </button>
                     </div>
                 </nav>
             </div>
         </div>
+        <div class="nav-progress-bar"></div>
     </header>
 
     <main>
@@ -317,8 +332,8 @@
                                     <span class="event-month">Feb</span>
                                 </div>
                                 <div class="event-details">
-                                    <h4>Graduate Research Symposium</h4>
-                                    <p>Students present their research findings to faculty and industry partners</p>
+                                    <h4>Graduate Student Research Symposium</h4>
+                                    <p>Showcase of cutting-edge research by CMU-Africa students</p>
                                     <span class="event-location">CMU-Africa Campus</span>
                                 </div>
                             </div>
@@ -328,9 +343,9 @@
                                     <span class="event-month">Mar</span>
                                 </div>
                                 <div class="event-details">
-                                    <h4>Industry Partnership Forum</h4>
-                                    <p>Connecting students with leading technology companies across Africa</p>
-                                    <span class="event-location">Virtual Event</span>
+                                    <h4>Career Fair 2024</h4>
+                                    <p>Connect with leading employers across Africa and beyond</p>
+                                    <span class="event-location">CMU-Africa Campus</span>
                                 </div>
                             </div>
                         </div>
@@ -342,21 +357,21 @@
                                     <i class="fas fa-trophy"></i>
                                 </div>
                                 <h4>Top 10 Engineering School in Africa</h4>
-                                <p>Ranked among the best engineering institutions on the continent by African University Rankings 2023.</p>
+                                <p>Ranked among the best engineering institutions on the continent</p>
                             </div>
                             <div class="achievement-item">
                                 <div class="achievement-icon">
                                     <i class="fas fa-medal"></i>
                                 </div>
                                 <h4>95% Graduate Employment Rate</h4>
-                                <p>Our graduates are highly sought after by leading technology companies and research institutions.</p>
+                                <p>Outstanding career outcomes for our graduates</p>
                             </div>
                             <div class="achievement-item">
                                 <div class="achievement-icon">
                                     <i class="fas fa-star"></i>
                                 </div>
                                 <h4>50+ Research Publications</h4>
-                                <p>Faculty and students published over 50 peer-reviewed papers in top-tier journals this year.</p>
+                                <p>Faculty and students contributing to global knowledge</p>
                             </div>
                         </div>
                     </div>
@@ -367,7 +382,7 @@
         <section class="student-life" id="student-life">
             <div class="container">
                 <div class="section-header">
-                    <h2>Student Life at CMU-Africa</h2>
+                    <h2>Student Life</h2>
                     <p>Experience vibrant campus life in the heart of Kigali</p>
                 </div>
                 <div class="student-life-content">
@@ -377,137 +392,146 @@
                                 <img src="https://via.placeholder.com/300x200/2c5aa0/ffffff?text=Campus+Life" alt="Campus Life">
                             </div>
                             <h3>Campus Community</h3>
-                            <p>Join a diverse community of students from over 25 countries, fostering cross-cultural collaboration and lifelong friendships.</p>
+                            <p>Join a diverse community of students from across Africa and around the world, fostering lifelong friendships and professional networks.</p>
                         </div>
                         <div class="student-life-item">
                             <div class="student-life-image">
                                 <img src="https://via.placeholder.com/300x200/2c5aa0/ffffff?text=Student+Clubs" alt="Student Organizations">
                             </div>
                             <h3>Student Organizations</h3>
-                            <p>Participate in various clubs and societies, from robotics and AI clubs to cultural organizations and sports teams.</p>
+                            <p>Participate in numerous clubs and organizations, from technical societies to cultural groups and entrepreneurship initiatives.</p>
                         </div>
                         <div class="student-life-item">
                             <div class="student-life-image">
                                 <img src="https://via.placeholder.com/300x200/2c5aa0/ffffff?text=Kigali+City" alt="Kigali Experience">
                             </div>
                             <h3>Kigali Experience</h3>
-                            <p>Explore Rwanda's beautiful capital city, known for its safety, cleanliness, and vibrant tech ecosystem.</p>
+                            <p>Explore Rwanda's beautiful capital city, known for its safety, cleanliness, and vibrant culture, while studying at CMU-Africa.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="admissions-cta" id="admissions">
+        <section class="contact-section" id="contact">
             <div class="container">
-                <div class="admissions-content">
-                    <div class="admissions-text">
-                        <h2>Ready to Join CMU-Africa?</h2>
-                        <p>Take the first step towards your future in engineering and technology. Our admissions team is here to guide you through the application process.</p>
-                        <div class="admissions-highlights">
-                            <div class="admission-highlight">
-                                <i class="fas fa-calendar-alt"></i>
-                                <div>
-                                    <strong>Application Deadline</strong>
-                                    <span>March 15, 2024</span>
-                                </div>
+                <div class="section-header">
+                    <h2>Get in Touch</h2>
+                    <p>Ready to start your journey with CMU-Africa?</p>
+                </div>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
                             </div>
-                            <div class="admission-highlight">
-                                <i class="fas fa-graduation-cap"></i>
-                                <div>
-                                    <strong>Program Start</strong>
-                                    <span>August 2024</span>
-                                </div>
-                            </div>
-                            <div class="admission-highlight">
-                                <i class="fas fa-dollar-sign"></i>
-                                <div>
-                                    <strong>Scholarships Available</strong>
-                                    <span>Up to 100% tuition coverage</span>
-                                </div>
+                            <div class="contact-details">
+                                <h4>Address</h4>
+                                <p>Carnegie Mellon University Africa<br>
+University of Rwanda - Nyarugenge Campus<br>
+KN 67 St, Kigali, Rwanda</p>
                             </div>
                         </div>
-                        <div class="admissions-buttons">
-                            <a href="#" class="btn btn-primary">Apply Now</a>
-                            <a href="#" class="btn btn-secondary">Download Brochure</a>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Phone</h4>
+                                <p>+250 788 300 300</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Email</h4>
+                                <p>admissions@africa.cmu.edu</p>
+                            </div>
                         </div>
                     </div>
-                    <div class="admissions-image">
-                        <img src="https://via.placeholder.com/500x400/c41e3a/ffffff?text=Apply+Today" alt="Apply to CMU-Africa">
+                    <div class="contact-form">
+                        <form class="form">
+                            <div class="form-group">
+                                <label for="name">Full Name</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <select id="subject" name="subject" required>
+                                    <option value="">Select a subject</option>
+                                    <option value="admissions">Admissions Inquiry</option>
+                                    <option value="programs">Program Information</option>
+                                    <option value="research">Research Opportunities</option>
+                                    <option value="general">General Information</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" rows="5" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Send Message</button>
+                        </form>
                     </div>
                 </div>
             </div>
         </section>
     </main>
 
-    <footer class="footer" id="contact">
+    <footer class="footer">
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
                     <div class="footer-logo">
                         <img src="https://via.placeholder.com/200x60/ffffff/c41e3a?text=CMU+Africa" alt="CMU Africa Logo">
                     </div>
-                    <p>Carnegie Mellon University Africa is committed to advancing engineering education and research excellence in Africa.</p>
+                    <p>Carnegie Mellon University Africa is committed to providing world-class engineering education and research opportunities in the heart of Africa.</p>
                     <div class="social-links">
-                        <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
                     </div>
                 </div>
                 <div class="footer-section">
-                    <h3>Quick Links</h3>
-                    <ul class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
                         <li><a href="#about">About Us</a></li>
                         <li><a href="#programs">Academic Programs</a></li>
-                        <li><a href="#research">Research</a></li>
                         <li><a href="#admissions">Admissions</a></li>
+                        <li><a href="#research">Research</a></li>
                         <li><a href="#student-life">Student Life</a></li>
-                        <li><a href="#news">News & Events</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
-                    <h3>Programs</h3>
-                    <ul class="footer-links">
-                        <li><a href="#">MS in Electrical & Computer Engineering</a></li>
-                        <li><a href="#">MS in Information Technology</a></li>
-                        <li><a href="#">MS in Engineering AI</a></li>
-                        <li><a href="#">Research Opportunities</a></li>
-                        <li><a href="#">Industry Partnerships</a></li>
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="#">Student Portal</a></li>
+                        <li><a href="#">Faculty Directory</a></li>
+                        <li><a href="#">Library</a></li>
+                        <li><a href="#">Career Services</a></li>
+                        <li><a href="#">Alumni Network</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
-                    <h3>Contact Info</h3>
-                    <div class="contact-info">
-                        <div class="contact-item">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <div>
-                                <strong>Address</strong>
-                                <span>TK 25 KN 3 Rd, Kigali, Rwanda</span>
-                            </div>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fas fa-phone"></i>
-                            <div>
-                                <strong>Phone</strong>
-                                <span>+250 788 123 456</span>
-                            </div>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fas fa-envelope"></i>
-                            <div>
-                                <strong>Email</strong>
-                                <span>info@africa.cmu.edu</span>
-                            </div>
-                        </div>
+                    <h4>Contact Info</h4>
+                    <div class="contact-info-footer">
+                        <p><i class="fas fa-map-marker-alt"></i> Kigali, Rwanda</p>
+                        <p><i class="fas fa-phone"></i> +250 788 300 300</p>
+                        <p><i class="fas fa-envelope"></i> info@africa.cmu.edu</p>
                     </div>
                 </div>
             </div>
             <div class="footer-bottom">
                 <div class="footer-bottom-content">
                     <p>&copy; 2023 Carnegie Mellon University Africa. All rights reserved.</p>
-                    <div class="footer-bottom-links">
+                    <div class="footer-links">
                         <a href="#">Privacy Policy</a>
                         <a href="#">Terms of Service</a>
                         <a href="#">Accessibility</a>
