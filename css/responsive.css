@@ -1,7 +1,7 @@
 /* Tablet Styles */
 @media (max-width: 768px) {
     .container {
-        padding: 0 15px;
+        padding: 0 20px;
     }
 
     /* Header */
@@ -11,11 +11,13 @@
         top: 100%;
         left: 0;
         right: 0;
-        background: white;
+        background: rgba(255, 255, 255, 0.98);
+        backdrop-filter: blur(10px);
         flex-direction: column;
-        padding: 1rem;
-        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-        gap: 1rem;
+        padding: 2rem;
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+        gap: 1.5rem;
+        border-top: 1px solid #e2e8f0;
     }
 
     .nav-list.active {
@@ -28,98 +30,437 @@
         transform: translateY(0);
     }
 
+    .nav-actions {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .nav-cta-btn {
+        padding: 0.625rem 1.25rem;
+        font-size: 0.85rem;
+    }
+
     .mobile-menu-toggle {
         display: flex;
     }
 
-    .mobile-menu-toggle.active span:nth-child(1) {
+    .mobile-menu-toggle.active .hamburger-line:nth-child(1) {
         transform: rotate(45deg) translate(5px, 5px);
     }
 
-    .mobile-menu-toggle.active span:nth-child(2) {
+    .mobile-menu-toggle.active .hamburger-line:nth-child(2) {
         opacity: 0;
     }
 
-    .mobile-menu-toggle.active span:nth-child(3) {
+    .mobile-menu-toggle.active .hamburger-line:nth-child(3) {
         transform: rotate(-45deg) translate(7px, -6px);
     }
 
     /* Hero Section */
+    .hero {
+        min-height: 600px;
+        margin-top: 70px;
+    }
+
     .hero-title {
-        font-size: 2.5rem;
+        font-size: 3rem;
     }
 
     .hero-subtitle {
-        font-size: 1.1rem;
+        font-size: 1.25rem;
+    }
+
+    .hero-description {
+        font-size: 1rem;
+        margin-bottom: 2rem;
     }
 
     .hero-buttons {
         flex-direction: column;
         align-items: center;
+        gap: 1rem;
     }
 
     .btn {
-        width: 200px;
-        text-align: center;
+        width: 100%;
+        max-width: 280px;
     }
 
-    /* Sections */
-    section {
-        padding: 60px 0;
+    /* Stats Section */
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
     }
 
+    .stat-number {
+        font-size: 2.5rem;
+    }
+
+    /* Section Headers */
     .section-header h2 {
+        font-size: 2.25rem;
+    }
+
+    .section-header p {
+        font-size: 1.125rem;
+    }
+
+    /* About Section */
+    .about-content {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+
+    .about-text {
+        padding-right: 0;
+        order: 2;
+    }
+
+    .about-image {
+        order: 1;
+    }
+
+    .about-image img {
+        height: 300px;
+    }
+
+    /* Programs Section */
+    .programs-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .program-card {
+        max-width: 500px;
+        margin: 0 auto;
+    }
+
+    /* Research Section */
+    .research-areas {
+        grid-template-columns: 1fr;
+    }
+
+    /* News Section */
+    .news-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .news-card.featured {
+        grid-column: span 1;
+    }
+
+    /* Contact Section */
+    .contact-content {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+
+    .contact-info h2 {
         font-size: 2rem;
     }
 
-    /* Features Grid */
-    .features-grid {
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-        gap: 1.5rem;
-    }
-
-    .feature-card {
-        padding: 1.5rem;
-    }
-
-    /* Programs Grid */
-    .programs-grid {
-        grid-template-columns: 1fr;
-        gap: 1.5rem;
-    }
-
-    /* News Grid */
-    .news-grid {
-        grid-template-columns: 1fr;
-        gap: 1.5rem;
+    .form {
+        padding: 2rem;
     }
 
     /* Footer */
     .footer-content {
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .footer-bottom-content {
+        flex-direction: column;
+        text-align: center;
         gap: 1.5rem;
+    }
+
+    .footer-links {
+        justify-content: center;
     }
 }
 
 /* Mobile Styles */
 @media (max-width: 480px) {
     .container {
-        padding: 0 10px;
+        padding: 0 16px;
     }
 
     /* Header */
     .header-content {
-        padding: 0.5rem 0;
+        padding: 1rem 0;
     }
 
     .logo img {
         height: 40px;
     }
 
+    .nav-list {
+        padding: 1.5rem;
+    }
+
+    .nav-cta-btn {
+        padding: 0.5rem 1rem;
+        font-size: 0.8rem;
+    }
+
     /* Hero Section */
     .hero {
-        margin-top: 70px;
         min-height: 500px;
+        margin-top: 60px;
+    }
+
+    .hero-title {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1.125rem;
+        margin-bottom: 0.75rem;
+    }
+
+    .hero-description {
+        font-size: 0.95rem;
+        margin-bottom: 2rem;
+    }
+
+    /* Stats Section */
+    .stats-section {
+        padding: 3rem 0;
+    }
+
+    .stats-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .stat-number {
+        font-size: 2rem;
+    }
+
+    .stat-label {
+        font-size: 1rem;
+    }
+
+    /* Sections */
+    section {
+        padding: 3rem 0;
+    }
+
+    .section-header {
+        margin-bottom: 3rem;
+    }
+
+    .section-header h2 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    .section-header p {
+        font-size: 1rem;
+    }
+
+    /* About Section */
+    .about-content {
+        gap: 2rem;
+    }
+
+    .about-text p {
+        font-size: 1rem;
+    }
+
+    .about-image img {
+        height: 250px;
+    }
+
+    .highlight-item {
+        padding: 0.75rem;
+    }
+
+    .highlight-item i {
+        font-size: 1rem;
+    }
+
+    /* Programs Section */
+    .programs-filter {
+        gap: 0.5rem;
+    }
+
+    .filter-btn {
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+    }
+
+    .program-header {
+        padding: 1.5rem;
+    }
+
+    .program-icon {
+        width: 60px;
+        height: 60px;
+        font-size: 1.5rem;
+    }
+
+    .program-content {
+        padding: 1.5rem;
+    }
+
+    .program-content h3 {
+        font-size: 1.25rem;
+    }
+
+    .program-footer {
+        padding: 0 1.5rem 1.5rem;
+        flex-direction: column;
+        gap: 1rem;
+        align-items: flex-start;
+    }
+
+    /* Research Section */
+    .research-area {
+        padding: 1.5rem;
+    }
+
+    .research-icon {
+        width: 60px;
+        height: 60px;
+        font-size: 1.5rem;
+    }
+
+    .research-area h3 {
+        font-size: 1.25rem;
+    }
+
+    /* News Section */
+    .news-tabs {
+        gap: 0.5rem;
+    }
+
+    .news-tab {
+        padding: 0.75rem 1.5rem;
+        font-size: 0.9rem;
+    }
+
+    .news-content-text {
+        padding: 1.5rem;
+    }
+
+    .news-card h3 {
+        font-size: 1.25rem;
+    }
+
+    .news-image {
+        height: 180px;
+    }
+
+    /* Contact Section */
+    .contact-info h2 {
+        font-size: 1.75rem;
+    }
+
+    .contact-info > p {
+        font-size: 1rem;
+    }
+
+    .contact-item {
+        padding: 1rem;
+    }
+
+    .form {
+        padding: 1.5rem;
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+        padding: 0.75rem;
+    }
+
+    /* Footer */
+    .footer {
+        padding: 3rem 0 1.5rem;
+    }
+
+    .footer-content {
+        margin-bottom: 2rem;
+    }
+
+    .footer-section h4 {
+        font-size: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .social-links a {
+        width: 40px;
+        height: 40px;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    /* Event Items */
+    .event-item {
+        flex-direction: column;
+        gap: 1rem;
+        padding: 1rem;
+    }
+
+    .event-date {
+        align-self: flex-start;
+        min-width: 60px;
+        padding: 0.75rem;
+    }
+
+    .event-day {
+        font-size: 1.25rem;
+    }
+
+    .event-month {
+        font-size: 0.8rem;
+    }
+
+    /* Achievement Items */
+    .achievement-item {
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+        padding: 1rem;
+    }
+
+    .achievement-icon {
+        width: 50px;
+        height: 50px;
+        font-size: 1.25rem;
+        margin: 0 auto;
+    }
+
+    /* Buttons */
+    .btn {
+        padding: 0.875rem 1.5rem;
+        font-size: 0.95rem;
+    }
+
+    /* Utility Classes for Mobile */
+    .mobile-hidden {
+        display: none;
+    }
+
+    .mobile-center {
+        text-align: center;
+    }
+
+    .mobile-full-width {
+        width: 100%;
+    }
+}
+
+/* Extra Small Mobile */
+@media (max-width: 360px) {
+    .container {
+        padding: 0 12px;
     }
 
     .hero-title {
@@ -130,125 +471,38 @@
         font-size: 1rem;
     }
 
-    .hero-content {
-        padding: 0 10px;
-    }
-
-    /* Buttons */
-    .btn {
-        padding: 10px 20px;
-        font-size: 0.9rem;
-        width: 180px;
-    }
-
-    /* Sections */
-    section {
-        padding: 40px 0;
-    }
-
-    .section-header {
-        margin-bottom: 2rem;
-    }
-
     .section-header h2 {
         font-size: 1.75rem;
     }
 
-    .section-header p {
-        font-size: 1rem;
+    .program-content h3,
+    .research-area h3,
+    .news-card h3 {
+        font-size: 1.125rem;
     }
 
-    /* Feature Cards */
-    .features-grid {
-        grid-template-columns: 1fr;
-        gap: 1rem;
-    }
-
-    .feature-card {
-        padding: 1rem;
-    }
-
-    .feature-icon {
-        width: 60px;
-        height: 60px;
+    .contact-info h2 {
         font-size: 1.5rem;
     }
 
-    .feature-card h3 {
-        font-size: 1.25rem;
-    }
-
-    /* Program Cards */
-    .program-content {
-        padding: 1rem;
-    }
-
-    .program-content h3 {
-        font-size: 1.25rem;
-    }
-
-    /* News Cards */
-    .news-card {
-        padding: 1rem;
-    }
-
-    .news-card h3 {
-        font-size: 1.1rem;
-    }
-
-    /* Footer */
-    .footer {
-        padding: 2rem 0 1rem;
-    }
-
-    .footer-content {
-        grid-template-columns: 1fr;
-        gap: 1rem;
-        text-align: center;
-    }
-
-    .social-links {
-        justify-content: center;
-    }
-
-    .contact-info p {
-        justify-content: center;
+    .btn {
+        padding: 0.75rem 1.25rem;
+        font-size: 0.9rem;
     }
 }
 
-/* Large Desktop Styles */
-@media (min-width: 1400px) {
-    .container {
-        max-width: 1400px;
+/* Landscape Mobile */
+@media (max-width: 768px) and (orientation: landscape) {
+    .hero {
+        min-height: 400px;
     }
 
     .hero-title {
-        font-size: 4rem;
+        font-size: 2.5rem;
     }
 
-    .hero-subtitle {
-        font-size: 1.5rem;
-    }
-
-    .section-header h2 {
-        font-size: 3rem;
-    }
-
-    .features-grid {
+    .stats-grid {
         grid-template-columns: repeat(4, 1fr);
-    }
-
-    .programs-grid {
-        grid-template-columns: repeat(3, 1fr);
-    }
-}
-
-/* Touch Device Styles */
-@media (hover: none) and (pointer: coarse) {
-    .nav-list .nav-item:nth-child(n+4) {
-        opacity: 1;
-        visibility: visible;
-        transform: translateY(0);
     }
 }
 
@@ -256,8 +510,9 @@
 @media print {
     .header,
     .footer,
-    .hero-buttons,
-    .mobile-menu-toggle {
+    .mobile-menu-toggle,
+    .btn,
+    .social-links {
         display: none;
     }
 
@@ -267,67 +522,23 @@
         padding: 2rem 0;
     }
 
-    .hero-background {
-        background: #f8f9fa;
+    .hero-background,
+    .hero-overlay {
+        display: none;
     }
 
     .hero-content {
-        color: #333;
+        color: #2d3748;
     }
 
     section {
-        padding: 1rem 0;
+        padding: 2rem 0;
     }
 
-    .feature-card,
     .program-card,
-    .news-card {
+    .news-card,
+    .research-area {
         break-inside: avoid;
         margin-bottom: 1rem;
-    }
-
-    .nav-list .nav-item:nth-child(n+4) {
-        opacity: 1;
-        visibility: visible;
-        transform: translateY(0);
-    }
-}
-
-/* High Contrast Mode */
-@media (prefers-contrast: high) {
-    .hero-background {
-        background: #000;
-    }
-
-    .feature-icon {
-        background: #000;
-    }
-
-    .btn-primary {
-        background: #000;
-        border-color: #000;
-    }
-
-    .social-link {
-        background: #000;
-    }
-}
-
-/* Reduced Motion */
-@media (prefers-reduced-motion: reduce) {
-    * {
-        animation-duration: 0.01ms !important;
-        animation-iteration-count: 1 !important;
-        transition-duration: 0.01ms !important;
-    }
-
-    .feature-card:hover,
-    .program-card:hover,
-    .news-card:hover {
-        transform: none;
-    }
-
-    .nav-list .nav-item:nth-child(n+4) {
-        transition: none;
     }
 }
